@@ -1,0 +1,259 @@
+
+.banner{
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-bottom: 100px;
+}
+.banner .imag{
+    width: 100%;
+    height: 400px;
+    background: url(img/contac3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imag::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0,0,.7);
+    opacity: 0.5;
+}
+.mapa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.mapa .contenedor{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #dddddd;
+}
+.contenedor .maps{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.contenedor .horario,.direccion,.correo{
+    width: 90%;
+}
+.contenedor h2{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #0D3A71;
+}
+.contenedor p{
+    text-align: center;
+    font-size: 14px;
+    color: #0D3A71;
+}
+.date{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #dddddd;
+    margin-bottom: 100px;
+    padding: 20PX 0;
+}
+.date .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.date .img .foto{
+    width: 80%;
+}
+.date .info{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.date h2{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: #0D3A71;
+    padding-bottom: 20px;
+}
+.date h4{
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    color: #0D3A71;
+    padding-bottom: 20px;
+}
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formulario input{
+    margin: 10px 0;
+    background-color: #0D3A71;
+}
+.formulario input[type='text']{
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 10px;
+    color: white;
+    border: none;
+}
+.formulario input::placeholder{
+    color: white;
+}
+.formulario textarea{
+    width: 100%;
+    height: 170px;
+    font-size: 14px;
+    padding: 10px 10px;
+    background-color: #0D3A71;
+    color: white;
+    border: none;
+}
+.formulario textarea::placeholder{
+    color: white;
+}
+.formulario input[type='submit']{
+    width: 50%;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.formulario input[type='submit']:hover{
+    cursor: pointer;
+    background-color: slategray;
+}
+.date .detalle{
+    width: 80%;
+}
+.date .detalle div{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    color: #0D3A71;
+
+}
+.date .detalle span{
+    padding-right: 20px;
+}
+@media screen and (min-width:768px){
+    .banner .imag{
+        height: 500px;
+    }
+    .mapa .contenedor{
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    .contenedor .horario,.direccion,.correo{
+        width: 30%;
+    }
+    .date{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .date .img{
+        width: 30%;
+        height: 300px;
+    }
+    .date .img .foto{
+        width: 100%;
+    }
+    .date .info{
+        width: 65%;
+    }
+    .date h2{
+        font-size: 35px;
+    }
+    .date h4{
+        font-size: 18px;
+    }
+    .formulario input[type='text']{
+        width: 90%;
+    }
+    .formulario textarea{
+        width: 90%;
+    }
+    .formulario input[type='submit']{
+        width: 40%;
+    }
+    .date .detalle{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .date .detalle div{
+        width: 50%;
+    }
+    .date .detalle span{
+        padding-right: 5px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .contenedor h2{
+        font-size: 30px;
+    }
+    .contenedor p{
+        font-size: 18px;
+    }
+    .date{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .date .img{
+        width: 25%;
+        height: 300px;
+    }
+    .date .info{
+        width: 70%;
+    }
+    .date h2{
+        font-size: 50px;
+    }
+    .date h4{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .formulario{
+        width: 80%;
+    }
+    .formulario input[type='text']{
+        font-size: 16px;
+    }
+    .formulario textarea{
+        font-size: 16px;
+    }
+    .formulario input[type='submit']{
+        width: 40%;
+        height: 50px;
+    }
+    .date .detalle{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+    .date .detalle div{
+        font-size: 18px;
+        width: 20%;
+    }
+    .date .detalle span{
+        padding-right: 10px;
+    }
+}

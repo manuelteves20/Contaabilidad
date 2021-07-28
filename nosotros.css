@@ -1,0 +1,298 @@
+
+.banner{
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-bottom: 100px;
+}
+.banner .imag{
+    width: 100%;
+    height: 400px;
+    background: url(img/nosotrospe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imag::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0,0,.7);
+    opacity: 0.5;
+}
+
+.articulos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+    background-color: #dddddd;
+    padding: 10px 0;
+}
+.articulos .arti{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.articulos .arti .art{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.arti .art h2{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #0D3A71;
+}
+.arti .art p{
+    width: 100%;
+    text-align: justify;
+    font-size: 14px;
+    color: #0D3A71;
+}
+.arti .art ul{
+    width: 100%;
+    font-size: 14px;
+    color: #0D3A71;
+}
+.arti img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+.informacion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.informacion .contexto{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contexto h2{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: #0D3A71;
+}
+.contexto .texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contexto article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.contexto article img{
+    margin-bottom: 20px;
+}
+.contexto article p{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #0D3A71;
+}
+.contexto .info2 img{
+    height: 300px;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #dddddd;
+    padding: 10px 0;
+    height: 200px;
+    margin-bottom: 100px;
+}
+.contact .ban{
+    width: 80%;
+}
+.contact .ban article{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact .ban h2{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    color: #0D3A71;
+    padding-bottom: 20px;
+}
+.contact .ban p{
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    color: #0D3A71;
+}
+.contact .ban a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #0D3A71;
+}
+.contact .ban a:hover{
+    background-color: steelblue;
+}
+.objetivos{
+    width: 100%;
+    background-color: #dddddd;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.objetivos .content{
+    width: 80%;
+}
+.content article{
+    width: 100%;
+}
+.content h2{
+    text-align: center;
+    padding: 50px 0;
+    color: #0D3A71;
+    font-size: 18px;
+}
+.content p{
+    text-align: justify;
+    color: #0D3A71;
+    font-size: 14px;
+}
+@media screen and (min-width:768px){
+    .banner .imag{
+        height: 500px;
+    }
+
+    .articulos .arti{
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+        
+    }
+    .articulos .arti .art{
+        width: 50%;
+    }
+    .arti .art ul{
+        padding-left: 50px;
+        font-size: 16px;
+    }
+    .articulos .arti img{
+        width: 30%;
+    }
+    .arti .art h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .arti .art p{
+        font-size: 16px;
+    }
+    article:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    .informacion .contexto{
+        width: 100%;
+    }
+    .contexto h2{
+        width: 100%;
+    }
+    .contexto .texto{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        height: 500px;
+    }
+    .contexto .texto article{
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+    .contexto .info2 img{
+        width: 100%;
+        height: 450px;
+    }
+    .contexto article p{
+        font-size: 16px;
+    }
+    .contact{
+        background: url(img/bannoso.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+    .contact .ban{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .contact .ban article{
+        width: 40%;
+    }
+    .contact .ban h2{
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+    }
+    .contact .ban p{
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+    .contact .ban a{
+        font-size: 18px;
+    }
+    .objetivos .content{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .objetivos .content article{
+        width: 40%;
+    }
+    .objetivos .content article h2{
+        font-size: 25px;
+    }
+    .objetivos .content article p{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:1200px){
+    .arti .art h2{
+        padding-bottom: 50px;
+    }
+    .contact .ban h2{
+        font-size: 28px;
+    }
+    .contact .ban p{
+        font-size: 20px;
+    }
+    .contact .ban article a{
+        margin-left: -100px;
+        font-size: 20px;
+        padding: 14px 24px;
+    }
+}

@@ -1,0 +1,422 @@
+
+/* cuerpo */
+.cuerpo{
+    position: relative;
+    grid-area: main;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner{
+    width: 100%; 
+    overflow: hidden; 
+    margin-bottom: 100px;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.contenido-slider{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+.contenido-slider div{
+    width: 80%;
+}
+
+.contenido-slider h2{
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+}
+#caja1{
+    background: url(img/estudent.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#caja2{
+    background: url(img/estuden2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#caja3{
+    background: url(img/titlo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#caja1{
+    background: url(img/estudent.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#caja1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0,0,.7);
+    opacity: 0.5;
+}
+#caja2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0,0,.7);
+    opacity: 0.5;
+}
+#caja3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0,0,.7);
+    opacity: 0.5;
+}
+.mod{
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: #dddddd;
+    padding: 10px 0;
+}
+.mod .modulos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.modulos .art{
+    width: 80%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    transition: 1s ease;
+}
+.modulos .art::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0,0.5);
+    position: absolute;
+}
+.modulos .art img{
+    width: 100%;
+    height: 100%;
+}
+.modulos .art:hover{
+    transform: translateX(-30px);
+    cursor: pointer;
+}
+.modulos .art h2{
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    color: white;
+    font-size: 32px;
+    z-index: 10;
+    width: 100%;
+    height: 100%; 
+}
+.modulos .art p{
+    position: absolute;
+    top: 140px;
+    left: 45px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 2;
+}
+.informacion{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #dddddd;
+    padding: 10px 0;
+}
+.informacion .info{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.info .texto{
+    width: 100%;
+}
+.info .texto h2{
+    color: #0D3A71;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.info .texto p{
+    color: #0D3A71;
+    width: 100%;
+    text-align: justify;
+
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #dddddd;
+    padding: 10px 0;
+    height: 200px;
+    margin-bottom: 100px;
+}
+.contact .ban{
+    width: 80%;
+}
+.contact .ban article{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact .ban h2{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    color: #0D3A71;
+    padding-bottom: 20px;
+}
+.contact .ban p{
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    color: #0D3A71;
+}
+.contact .ban a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #0D3A71;
+    font-weight: 500;
+}
+.contact .ban a:hover{
+    background-color: gray;
+}
+.noticias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.noticias .ultimas{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ultimas h2{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #0D3A71;
+}
+.ultimas .publicacion{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 70px;
+    background-color: #d3d2d2;
+    overflow: hidden;
+}
+.ultimas .publicacion img{
+    width: 100%;
+    height: 200px;
+    padding-bottom: 20px;
+}
+.ultimas .publicacion h3{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    color: #0D3A71;
+    padding-bottom: 40px;
+    font-weight: 500;
+}
+.ultimas .publicacion a{
+    text-decoration: none;
+    margin-left: 50%;
+    color: white;
+    background-color: #0D3A71;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.ultimas .publicacion a:hover{
+    background-color: teal;
+}
+@media screen and (min-width:768px){
+
+    /* cuerpo */
+    .contenido-slider{
+        height: 500px;
+    }
+    .contenido-slider h2{
+        top: 250px;
+        font-size: 20pt;
+        text-align: left;
+    }
+    .mod .modulos{
+        justify-content: space-evenly;
+    }
+    .mod .modulos .art{
+        width: 30%;
+        /* position: relative; */
+    }
+    .mod .modulos .art:hover{
+        transform: translateX(-20px);
+    }
+    .informacion .info{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .informacion .info img{
+        width: 30%;
+    }
+    .informacion .info .texto{
+        width: 55%;
+    }
+    .contact{
+        background: url(img/bannoso.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+    .contact .ban{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .contact .ban article{
+        width: 40%;
+    }
+    .contact .ban h2{
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+    }
+    .contact .ban p{
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+    .contact .ban a{
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    .noticias .ultimas{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .ultimas h2{
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+    }
+    .ultimas .publicacion{
+        width: 30%;
+        height: 350px;
+        border-radius: 10px;
+        margin-top: 70px;
+        background-color: #d3d2d2;
+        overflow: hidden;
+    }
+    .ultimas .publicacion a{
+        text-decoration: none;
+        margin-left: 50%;
+        color: white;
+        background-color: #0D3A71;
+        border-radius: 20px;
+        padding: 10px 15px;
+    }
+}
+@media screen and (min-width:1200px){
+    
+    /* cuerpo */
+    .contenido-slider h2{
+        left: 20px;
+        font-size: 40px;
+    }
+    .mod .modulos{
+     justify-content: space-evenly;
+    }
+    .mod .modulos .art{
+        width: 28%;
+    }
+    .informacion .info img{
+        width: 25%;
+    }
+    .informacion .info .texto{
+        width: 50%;
+    }
+    .informacion .info .texto h2{
+        margin-bottom: 70px;
+        text-align: left;
+        font-size: 35px;
+        padding: 10px 0;
+    }
+    .contact .ban h2{
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .contact .ban p{
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .contact .ban article a{
+        font-size: 18px;
+        padding: 12px 22px;
+    }
+    .noticias .ultimas{
+        width: 90%;
+    }
+    .ultimas h2{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+    .ultimas .publicacion{
+        width: 25%;
+    }
+    .ultimas .publicacion h3{
+        font-size: 22px;
+    }
+    .ultimas .publicacion a{
+        margin-left: 60%;
+    }
+}
